@@ -5,15 +5,51 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.kracr.iiitd.edu.in/ontology/appl-e">
         <owl:versionIRI rdf:resource="http://www.kracr.iiitd.edu.in/ontology/appl-e/1.0"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-27T10:00:00</terms:created>
-        <terms:creator>Aisha Aijaz</terms:creator>
-        <terms:description>An Ontology for Applied Ethics concepts and situational context to capture information pertaining to the morality of an action during some event.</terms:description>
-        <terms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
-        <terms:title>Appl-E: Applied Ethics Ontology</terms:title>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manohar Kumar</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raghava Mutharaju</terms:contributor>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aisha Aijaz</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Ontology for applied ethics and situational context to capture relevant ethical information that may provide insight to the morality of a course of action during a particular event.</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appl-E: An Applied Ethics Ontology</terms:title>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
