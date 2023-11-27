@@ -8,6 +8,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.kracr.iiitd.edu.in/ontology/appl-e">
         <owl:versionIRI rdf:resource="http://www.kracr.iiitd.edu.in/ontology/appl-e/1.0"/>
+        <terms:contributor>Raghava Mutharaju</terms:contributor>
+        <terms:contributor>Manohar Kumar</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-27T10:00:00</terms:created>
+        <terms:creator>Aisha Aijaz</terms:creator>
+        <terms:description>An Ontology for Applied Ethics concepts and situational context to capture information pertaining to the morality of an action during some event.</terms:description>
+        <terms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+        <terms:title>Appl-E: Applied Ethics Ontology</terms:title>
     </owl:Ontology>
     
 
