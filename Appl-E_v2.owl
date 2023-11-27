@@ -9,8 +9,8 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.kracr.iiitd.edu.in/ontology/appl-e">
         <owl:versionIRI rdf:resource="http://www.kracr.iiitd.edu.in/ontology/appl-e/1.0"/>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manohar Kumar</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raghava Mutharaju</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manohar Kumar</terms:contributor>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aisha Aijaz</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Ontology for applied ethics and situational context to capture relevant ethical information that may provide insight to the morality of a course of action during a particular event.</terms:description>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appl-E: An Applied Ethics Ontology</terms:title>
