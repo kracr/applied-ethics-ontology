@@ -7,11 +7,12 @@ The ApplE ontology is  an Applied Ethics ontology that captures philosophical th
 
 ![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/upper%20level%20ontology.png?raw=true)
 
-https://github.com/kracr/applied-ethics-ontology/blob/main/images/upper%20level%20ontology.png
-
 # Methodology 
 
 The development process adheres to the Simplified Agile Methodology for Ontology Development (SAMOD) and utilizes the standard design and publication practices. Apart from the ontological reasoning and quality checks, ApplE is also evaluated using a three-fold testing process of SAMOD. ApplE follows FAIR principles and aims to be a viable resource for applied ethicists and ontology engineers.
+
+![alt text]([https://github.com/kracr/applied-ethics-ontology/blob/main/images/upper%20level%20ontology.png](https://github.com/kracr/applied-ethics-ontology/blob/main/images/methodology.jpg
+)?raw=true)
 
 # Resource Specifications
 
