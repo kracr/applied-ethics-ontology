@@ -5,6 +5,10 @@ This repository contains the ApplE (applied ethics) ontology and related artifac
 
 The ApplE ontology is  an Applied Ethics ontology that captures philosophical theory and event context to holistically describe an action's morality. This ontology provides explicit representation of the classes and relationships that define ethics theory and contextual information of an event. 
 
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/upper%20level%20ontology.png?raw=true)
+
+https://github.com/kracr/applied-ethics-ontology/blob/main/images/upper%20level%20ontology.png
+
 # Methodology 
 
 The development process adheres to the Simplified Agile Methodology for Ontology Development (SAMOD) and utilizes the standard design and publication practices. Apart from the ontological reasoning and quality checks, ApplE is also evaluated using a three-fold testing process of SAMOD. ApplE follows FAIR principles and aims to be a viable resource for applied ethicists and ontology engineers.
