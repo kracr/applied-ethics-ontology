@@ -18,6 +18,11 @@ Table of Contents:
    3.2. [Ethics Theory Module](#ethicstheory)
 4. [Resource Specifications](#resourcespec)
 5. [Repository Details](#repo)
+
+   5.1. [ApplE Ontology](#5onto)
+   5.2. [ApplE Website](#5web)
+   5.3. [Miscellaneous](#5other)
+   
 6. [Tutorial](#tut)
    
    6.1. [How to - Reuse Desirable Entities](#a)
@@ -113,9 +118,9 @@ This repository consists of the ApplE ontology and related artefacts.
 The ApplE website was developed as a customized version using the automatically generated Live OWL Documentation Environment (LODE) software. This repository allows us to host the html file and other associated files via a permanent uniform resource locator (PURL) for easy access to the documentation.  
 
 <a name="5other"></a>
-### 5.3. Misceallaneous 
+### 5.3. Miscellaneous 
 
-A folder contains the images that are useful for the documentation of this ontology. The images are either high quality original visual representations of the ontology or screenshots of experiments or validations. The tests folder consists of the competency questions used, the associated queries, and the badge proving the quality of ApplE from the [OOPS Pitfall Scanner](https://oops.linkeddata.es/).
+A folder contains the [images](https://github.com/kracr/applied-ethics-ontology/tree/main/images) that are useful for the documentation of this ontology. The images are either high quality original visual representations of the ontology or screenshots of experiments or validations. The [tests](https://github.com/kracr/applied-ethics-ontology/tree/main/tests) folder consists of the competency questions used, the associated queries, and the badge proving the quality of ApplE from the [OOPS Pitfall Scanner](https://oops.linkeddata.es/).
 
 <a name="tut"></a>
 ## 6. Tutorial
