@@ -131,7 +131,7 @@ The ApplE website was developed as a customized version using the automatically 
 
 A folder contains the [images](https://github.com/kracr/applied-ethics-ontology/tree/main/images) that are useful for the documentation of this ontology. The images are either high quality original visual representations of the ontology or screenshots of experiments or validations. The [tests](https://github.com/kracr/applied-ethics-ontology/tree/main/tests) folder consists of the competency questions used, the associated queries, and the badge proving the quality of ApplE from the [OOPS Pitfall Scanner](https://oops.linkeddata.es/).
 
-![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/OOPS%20Pitfall%20Scanner_No%20Pitfalls%20Detected%20-%20Badge.png.png?raw=true)
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/OOPS%20Pitfall%20Scanner_No%20Pitfalls%20Detected%20-%20Badge.png?raw=true)
 
 <a href="http://oops.linkeddata.es"> 
 	<img src="images/conformance/oops_free.png" 
