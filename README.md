@@ -15,12 +15,15 @@ Table of Contents:
 
    3.1. [Applied Ethics Module](#appliedethics)
 
-   3.2. [Ethics Theory Module](#ethicstheory)
+   3.2. [Event Context Module](#eventcontext)
+   
 4. [Resource Specifications](#resourcespec)
 5. [Repository Details](#repo)
 
    5.1. [ApplE Ontology](#5onto)
+   
    5.2. [ApplE Website](#5web)
+
    5.3. [Miscellaneous](#5other)
    
 6. [Tutorial](#tut)
@@ -57,42 +60,48 @@ Steps to building ApplE:
 3. Merge the modelet to any previous milestone.
 4. Refactor the new ontology to ensure semantic integrity.
 
-During the initial phase, informal competency questions were created to gauge the quality of the ontology. A glossary of terms was also built in order to discretize the abstract philosophical terms that ApplE call for. The testing phase involves three-fold testing as the model, data, and query level. More on this has been discussed in our paper. Please see the 'tests' folder for some related artefacts such as competency questions and SWRL rules.
+During the initial phase, informal competency questions were created to gauge the quality of the ontology. A glossary of terms was also built in order to discretize the abstract philosophical terms that ApplE call for. The testing phase involves three-fold testing as the model, data, and query level. More on this has been discussed in our paper. Please see the 'tests' folder for some related artifacts, such as competency questions and SWRL rules.
 
-Brief Glossary of Terms:
+**Brief Glossary of Terms:**
 
 - Applied Ethics Module
-   Ethics: A discipline concerned with studying what is morally right, wrong, good, or bad.
+   - Ethics: A discipline concerned with studying what is morally right, wrong, good, or bad.
 
-   Applied Ethics: A discipline concerned with the application of ethics in realworld events.
+   - Applied Ethics: A discipline concerned with the application of ethics in realworld events.
 
-   Applied Ethics Philosophy: A theory or ideology that stems from normative ethics and is applied to real-world events.
+   - Applied Ethics Philosophy: A theory or ideology that stems from normative ethics and is applied to real-world events.
 
-   Ethical Principle: A concept that defends the morality of an action at an intrinsic level.
+   - Ethical Principle: A concept that defends the morality of an action at an intrinsic level.
 
-   Ethical Issue: A situation where an ethical conflict may arise.
+   - Ethical Issue: A situation where an ethical conflict may arise.
 - Event Context Module
 
-   Context: The circumstances in which an event occurs.
+   - Context: The circumstances in which an event occurs.
 
-   Event: Something that happens.
+   - Event: Something that happens.
 
-   Agent: An entity capable of doing and receiving actions (eg: Person, Company, Animal, Government, etc.).
+   - Agent: An entity capable of doing and receiving actions (eg: Person, Company, Animal, Government, etc.).
 
-   Action: Something that is done.
+   - Action: Something that is done.
 
-   Consequence: The outcome of an action.
+   - Consequence: The outcome of an action.
 
-   Moral Intention: The intention of an agent with regard to a moral action.
+   - Moral Intention: The intention of an agent with regard to a moral action.
 
 <a name="onto"></a>
 ## 3. ApplE Ontology
 
+The ApplE ontology consists of two modules which each categorize the various factors required to make an ethically-informed decision.
+
 <a name="appliedethics"></a>
 ### 3.1 Applied Ethics Module
 
-<a name="ethicstheory"></a>
-### 3.2 Ethics Theory Module
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/ethics module_updated.png?raw=true)
+
+<a name="eventcontext"></a>
+### 3.2 Event Context Module
+
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/context module.png?raw=true)
 
 <a name="resourcespec"></a>
 ## 4. Resource Specifications
