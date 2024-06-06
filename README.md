@@ -12,6 +12,10 @@ Table of Contents:
 1. [Introduction](#intro)
 2. [Methodology](#method)
 3. [ApplE Ontology](#onto)
+
+   3.1. [Applied Ethics Module](#appliedethics)
+
+   3.2. [Ethics Theory Module](#ethicstheory)
 4. [Resource Specifications](#resourcespec)
 5. [Repository Details](#repo)
 6. [Tutorial](#tut)
@@ -54,22 +58,36 @@ Brief Glossary of Terms:
 
 - Applied Ethics Module
    Ethics: A discipline concerned with studying what is morally right, wrong, good, or bad.
+
    Applied Ethics: A discipline concerned with the application of ethics in realworld events.
+
    Applied Ethics Philosophy: A theory or ideology that stems from normative ethics and is applied to real-world events.
+
    Ethical Principle: A concept that defends the morality of an action at an intrinsic level.
+
    Ethical Issue: A situation where an ethical conflict may arise.
 - Event Context Module
+
    Context: The circumstances in which an event occurs.
+
    Event: Something that happens.
+
    Agent: An entity capable of doing and receiving actions (eg: Person, Company, Animal, Government, etc.).
+
    Action: Something that is done.
+
    Consequence: The outcome of an action.
+
    Moral Intention: The intention of an agent with regard to a moral action.
 
 <a name="onto"></a>
 ## 3. ApplE Ontology
 
+<a name="appliedethics"></a>
+### 3.1 Applied Ethics Module
 
+<a name="ethicstheory"></a>
+### 3.2 Ethics Theory Module
 
 <a name="resourcespec"></a>
 ## 4. Resource Specifications
