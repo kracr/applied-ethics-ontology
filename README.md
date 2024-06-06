@@ -15,9 +15,9 @@ Table of Contents:
 4. [Resource Specifications](#resourcespec)
 5. [Repository Details](#repo)
 6. [Tutorial](#tut)
-  5.1. [How to - Reuse Desirable Entities](#a)
-  5.2. [How to - Extrapolate to Domain-Specific Use Case](#b)
-  5.3. [How to - Metaethics Research](#c)
+   6.1. [How to - Reuse Desirable Entities](#a)
+   6.2. [How to - Extrapolate to Domain-Specific Use Case](#b)
+   6.3. [How to - Metaethics Research](#c)
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -61,12 +61,15 @@ During the initial phase, informal competency questions were created to gauge th
 
 <a name="tut"></a>
 ## 6. Tutorial
-
+This tutorial describes methods of application where the ApplE ontology may be used as a resource for applied ethics information. 
 <a name="a"></a>
 ###  6.1. How to - Reuse Desirable Entities
 
 <a name="b"></a>
-###  6.2. How to - Extrapolate to Domain-Specific Use Case
+###  6.2. How to - Domain-Specific Use Case
 
 <a name="c"></a>
-###  6.3. How to - Metaethics Research
+###  6.3 How to - Dataset Development
+
+<a name="d"></a>
+###  6.4. How to - Metaethics Research
