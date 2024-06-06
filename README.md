@@ -131,6 +131,8 @@ The ApplE website was developed as a customized version using the automatically 
 
 A folder contains the [images](https://github.com/kracr/applied-ethics-ontology/tree/main/images) that are useful for the documentation of this ontology. The images are either high quality original visual representations of the ontology or screenshots of experiments or validations. The [tests](https://github.com/kracr/applied-ethics-ontology/tree/main/tests) folder consists of the competency questions used, the associated queries, and the badge proving the quality of ApplE from the [OOPS Pitfall Scanner](https://oops.linkeddata.es/).
 
+<a href="HTTP://oops.linkeddata.es"> <img src="images/conformance/oops_free.png" alt="Free of pitfalls" height="69.6" width="100"/>
+
 <a name="tut"></a>
 ## 6. Tutorial
 This tutorial describes methods of application where the ApplE ontology may be used as a resource for applied ethics information. 
@@ -160,11 +162,16 @@ _This case refers to the mass addiction to opioid-based painkillers in the US in
 The following competency questions may be asked via the ApplE ontology:
 
 **CQ:** Which active agent prescribes the opioid painkiller?
+
 **Associated DL Query:** ActiveAgent and doesAction some {PrescribeOpioidPainkiller}
+
 **Result:** Doctor
 
+
 **CQ:** What is the consequence of the action done by the Doctor?
+
 **Associated DL Query:** Consequence and inverse hasConsequence some (Action and inverse doesAction some {Doctor})
+
 **Result:** OpioidUseDisorder, PainRelief
 
 In addition to this, we may model the use case using the ApplE ontology by instantiating the details from the real-world scenario. The user may use the provided SWRL rules to recognize whether the action done by the active agent in this particular scenario is leaning towards morally grey, right, or wrong. This may be viewed in the image below.
@@ -175,6 +182,8 @@ As we can see, the information provided to the ApplE ontology triggers one of th
 
 <a name="c"></a>
 ###  6.3 How to - Dataset Development
+
+The ApplE ontology may be used to drive the development of Knowledge Graphs and Datasets. The taxonomy this ontology is built upon was created in collaboration with a domain expert, in our case, an Applied Ethicist, 
 
 <a name="d"></a>
 ###  6.4. How to - Metaethics Research
