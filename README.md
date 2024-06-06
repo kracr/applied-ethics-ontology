@@ -161,7 +161,7 @@ The instances will then add to a knowledge graph that would represent the domain
 
 For example, given the following real-world motivation scenario:
 
-_This case refers to the mass addiction to opioid-based painkillers in the US in the early 2000s. Bioethics features an applied ethics philosophy called Principlism, which favors the principles of justice, nonmaleficence, beneficence, and autonomy. Consider this. A doctor, with good intentions, prescribed to a teenage patient thirty tablets of Oxycontin, a powerful painkiller containing oxycodone, a powerful opioid, for post-dental surgery pain. They were not fully aware of its addictive nature when taken over prolonged periods of time, and yet prescribed a large dose of the drug against policy so the patient would not have to come to the clinic multiple times. However, the continuous intake of the drug led to Opioid Use Disorder (OUD) [45] in the patient. Given that the good, short-term consequence was mild (relieving pain), but the bad, long-term consequence was significant (addiction to drugs), the doctor was at fault regardless of his good intentions. The doctor violated the principles of responsibility and nonmaleficence while upholding the principle of beneficence. They were responsible for fully knowing the drug before prescribing it and following their duties without breaching any policy._
+_This case refers to the mass addiction to opioid-based painkillers in the US in the early 2000s. Bioethics features an applied ethics philosophy called Principlism, which favors the principles of justice, nonmaleficence, beneficence, and autonomy. Consider this. A doctor, with good intentions, prescribed to a teenage patient thirty tablets of Oxycontin, a powerful painkiller containing oxycodone, a powerful opioid, for post-dental surgery pain. They were not fully aware of its addictive nature when taken over prolonged periods of time, and yet prescribed a large dose of the drug against policy so the patient would not have to come to the clinic multiple times. However, the continuous intake of the drug led to Opioid Use Disorder (OUD) [45] in the patient. Given that the good, short-term consequence was mild (relieving pain), but the bad, long-term consequence was significant (addiction to drugs), the doctor was at fault regardless of his good intentions. The doctor violated the principles of responsibility and nonmaleficence while upholding the principle of beneficence. They were responsible for fully knowing the drug before prescribing it and following their duties without breaching any policy._
 
 The following competency questions may be asked via the ApplE ontology:
 
@@ -185,9 +185,15 @@ In addition to this, we may model the use case using the ApplE ontology by insta
 As we can see, the information provided to the ApplE ontology triggers one of the provided SWRL rules and is able to give the answer in asociation with this bioethics use case.
 
 <a name="c"></a>
-###  6.3 How to - Dataset Development
+###  6.3 How to - Dataset Development (New)
 
-The ApplE ontology may be used to drive the development of Knowledge Graphs and Datasets. The taxonomy this ontology is built upon was created in collaboration with a domain expert, in our case, an Applied Ethicist, 
+The ApplE ontology may be used to drive the development of Knowledge Graphs and Datasets. The taxonomy this ontology is built upon was created in collaboration with a domain expert, in our case, an Applied Ethicist. In our current work, we have used the ontology to develop a dataset for real-world scenarios in various domains where an ethical concern/dilemma is present. This dataset, the ApplE dataset, would be a work that expands on [Hendrycks' ETHICS dataset](https://github.com/hendrycks/ethics). 
+
+The data is scraped from 25 subreddits which include AITA, AITAFiltered, AITJ, Am I the Angel, Tales from Retail, etc. This raw data was then preprocessed and cleaned, before being plugged into the GPT-4 LLM for summarization. The information from the ApplE ontology was provided to the LLM to recognize entities that were to be used as headers for the datasets, and what the semantic connections between these entities were. Using this information from ApplE, the LLM was able to summarize each case (Post Text from the Subreddits) and also infer the values for the headers provided.
+
+A screengrab from the ontology-aided ApplE dataset is shown below:
+
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/split.png?raw=true)
 
 <a name="d"></a>
 ###  6.4. How to - Metaethics Research
