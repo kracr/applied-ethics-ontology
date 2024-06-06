@@ -96,12 +96,12 @@ The ApplE ontology consists of two modules which each categorize the various fac
 <a name="appliedethics"></a>
 ### 3.1 Applied Ethics Module
 
-![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/ethics module_updated.png?raw=true)
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/ethics%20module_updated.png?raw=true)
 
 <a name="eventcontext"></a>
 ### 3.2 Event Context Module
 
-![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/context module.png?raw=true)
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/context%20module.png?raw=true)
 
 <a name="resourcespec"></a>
 ## 4. Resource Specifications
