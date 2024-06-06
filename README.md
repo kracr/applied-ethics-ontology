@@ -134,11 +134,44 @@ A folder contains the [images](https://github.com/kracr/applied-ethics-ontology/
 <a name="tut"></a>
 ## 6. Tutorial
 This tutorial describes methods of application where the ApplE ontology may be used as a resource for applied ethics information. 
+
 <a name="a"></a>
 ###  6.1. How to - Reuse Desirable Entities
 
+The ontology is available for anyone to access via this repository and the PURL locator. We have suggested the ApplE ontology to the [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/) as a resource since the platform does not contain any ontology or ODP that is dedicated to Applied Ethics, Ethics, or Ethics Theory. 
+
+Once accessed/downloaded, a user may import the ontology to their own and use the entities (classes, data properties, instances, etc.) they would like for their own ontology. This is usually recommended when a user may like to expand on our ontology for a specific use case, or use many entities.
+
+Alternatively, a use may use the IRI of the entity they choose and directly import it via that identifier. This is recommended when the number of desired entities from the ApplE ontology are few.
+
+Reusing entities from established ontologies is considered a good practice in the ontology development and modeling community as it aids the interconnectedness of information.
+
 <a name="b"></a>
 ###  6.2. How to - Domain-Specific Use Case
+
+One may apply the ontology to a specific use case, and use the given entities and properties to infer semantically appropriate information from the scenario. A user may plug in the user-required values in the form of instances for as many classes as they can (provided that the information regarding the scenario is known to them), and let the ontology do the rest.
+
+The instances will then add to a knowledge graph that would represent the domain-specific use case via the ApplE ontology.
+
+For example, given the following real-world motivation scenario:
+
+_This case refers to the mass addiction to opioid-based painkillers in the US in the early 2000s. Bioethics features an applied ethics philosophy called Principlism, which favors the principles of justice, nonmaleficence, beneficence, and autonomy. Consider this. A doctor, with good intentions, prescribed to a teenage patient thirty tablets of Oxycontin, a powerful painkiller containing oxycodone, a powerful opioid, for post-dental surgery pain. They were not fully aware of its addictive nature when taken over prolonged periods of time, and yet prescribed a large dose of the drug against policy so the patient would not have to come to the clinic multiple times. However, the continuous intake of the drug led to Opioid Use Disorder (OUD) [45] in the patient. Given that the good, short-term consequence was mild (relieving pain), but the bad, long-term consequence was significant (addiction to drugs), the doctor was at fault regardless of his good intentions. The doctor violated the principles of responsibility and nonmaleficence while upholding the principle of beneficence. They were responsible for fully knowing the drug before prescribing it and following their duties without breaching any policy._
+
+The following competency questions may be asked via the ApplE ontology:
+
+**CQ:** Which active agent prescribes the opioid painkiller?
+**Associated DL Query:** ActiveAgent and doesAction some {PrescribeOpioidPainkiller}
+**Result:** Doctor
+
+**CQ:** What is the consequence of the action done by the Doctor?
+**Associated DL Query:** Consequence and inverse hasConsequence some (Action and inverse doesAction some {Doctor})
+**Result:** OpioidUseDisorder, PainRelief
+
+In addition to this, we may model the use case using the ApplE ontology by instantiating the details from the real-world scenario. The user may use the provided SWRL rules to recognize whether the action done by the active agent in this particular scenario is leaning towards morally grey, right, or wrong. This may be viewed in the image below.
+
+![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/usecasemodeling.png?raw=true)
+
+As we can see, the information provided to the ApplE ontology triggers one of the provided SWRL rules and is able to give the answer in asociation with this bioethics use case.
 
 <a name="c"></a>
 ###  6.3 How to - Dataset Development
