@@ -20,7 +20,9 @@ Table of Contents:
 
    6.2. [How to - Extrapolate to Domain-Specific Use Case](#b)
 
-   6.3. [How to - Metaethics Research](#c)
+   6.3. [How to - Dataset Development](#c)
+
+   6.3. [How to - Metaethics Research](#d)
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -46,10 +48,28 @@ Steps to building ApplE:
 3. Merge the modelet to any previous milestone.
 4. Refactor the new ontology to ensure semantic integrity.
 
-During the initial phase, informal competency questions were created to gauge the quality of the ontology. A glossary of terms was also built in order to discretize the abstract philosophical terms that ApplE call for. The testing phase involves three-fold testing as the model, data, and query level. More on this has been discussed in our paper.
+During the initial phase, informal competency questions were created to gauge the quality of the ontology. A glossary of terms was also built in order to discretize the abstract philosophical terms that ApplE call for. The testing phase involves three-fold testing as the model, data, and query level. More on this has been discussed in our paper. Please see the 'tests' folder for some related artefacts such as competency questions and SWRL rules.
+
+Brief Glossary of Terms:
+
+- Applied Ethics Module
+   Ethics: A discipline concerned with studying what is morally right, wrong, good, or bad.
+   Applied Ethics: A discipline concerned with the application of ethics in realworld events.
+   Applied Ethics Philosophy: A theory or ideology that stems from normative ethics and is applied to real-world events.
+   Ethical Principle: A concept that defends the morality of an action at an intrinsic level.
+   Ethical Issue: A situation where an ethical conflict may arise.
+- Event Context Module
+   Context: The circumstances in which an event occurs.
+   Event: Something that happens.
+   Agent: An entity capable of doing and receiving actions (eg: Person, Company, Animal, Government, etc.).
+   Action: Something that is done.
+   Consequence: The outcome of an action.
+   Moral Intention: The intention of an agent with regard to a moral action.
 
 <a name="onto"></a>
 ## 3. ApplE Ontology
+
+
 
 <a name="resourcespec"></a>
 ## 4. Resource Specifications
