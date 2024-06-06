@@ -100,6 +100,23 @@ Brief Glossary of Terms:
 <a name="repo"></a>
 ## 5. Repository Details
 
+This repository consists of the ApplE ontology and related artefacts.
+
+<a name="5onto"></a>
+### 5.1. ApplE Ontology
+
+ The ontology is presented in the OWL format for ease of accessibility. It may be accessed via Protege. For reference, the authors used Protege Version 5.5.0 for running this version of ApplE on an 11th Gen i7 64-bit system with a Windows 11 Home Version 23H2. The ontology yields no pitfalls and is consistent and coherent. It passed all model tests and is semantically sound. Further tests were completed via data and query testing, which are also included in this repository.
+
+<a name="5web"></a>
+### 5.2. ApplE Website
+
+The ApplE website was developed as a customized version using the automatically generated Live OWL Documentation Environment (LODE) software. This repository allows us to host the html file and other associated files via a permanent uniform resource locator (PURL) for easy access to the documentation.  
+
+<a name="5other"></a>
+### 5.3. Misceallaneous 
+
+A folder contains the images that are useful for the documentation of this ontology. The images are either high quality original visual representations of the ontology or screenshots of experiments or validations. The tests folder consists of the competency questions used, the associated queries, and the badge proving the quality of ApplE from the [OOPS Pitfall Scanner](https://oops.linkeddata.es/).
+
 <a name="tut"></a>
 ## 6. Tutorial
 This tutorial describes methods of application where the ApplE ontology may be used as a resource for applied ethics information. 
