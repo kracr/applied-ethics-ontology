@@ -15,8 +15,11 @@ Table of Contents:
 4. [Resource Specifications](#resourcespec)
 5. [Repository Details](#repo)
 6. [Tutorial](#tut)
+   
    6.1. [How to - Reuse Desirable Entities](#a)
+
    6.2. [How to - Extrapolate to Domain-Specific Use Case](#b)
+
    6.3. [How to - Metaethics Research](#c)
 
 <a name="intro"></a>
