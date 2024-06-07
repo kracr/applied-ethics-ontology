@@ -8,7 +8,7 @@ Further information regarding the ApplE ontology may be accessed at the followin
 - [Documentation](https://purl.org/appliedethicsontology/documentation)
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-Table of Contents:
+# Table of Contents:
 1. [Introduction](#intro)
 2. [Methodology](#method)
 3. [ApplE Ontology](#onto)
@@ -32,9 +32,10 @@ Table of Contents:
 
    6.2. [How to - Extrapolate to Domain-Specific Use Case](#b)
 
-   6.3. [How to - Dataset Development](#c)
+   6.3. [How to - Dataset Development (New)](#c)
 
 7. [Metaethics Research (for philosophy nerds)](#meta)
+8. [Resource Maintenance](#maintenance)
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -209,3 +210,14 @@ Initially, we began this research project with the intention to discretize ethic
 This is why the ApplE Ontology may fuel not only technological research but also metaethics research, as we can run and test neurosymbolic models built upon this resource to truly gauge (in real-time) the applicability of specific theories (for example, [principlism](https://d1wqtxts1xzle7.cloudfront.net/73154189/Physicians_and_Patients_in_Relation_Clin20211019-24187-z1m6s4-libre.pdf?1634653881=&response-content-disposition=inline%3B+filename%3DPhysicians_and_Patients_in_Relation_Clin.pdf&Expires=1717747572&Signature=TOASBoxVguD82Ls0IN7Pk709mjZ6REr03xu-v1UJCYrgYlSkZo9lwo6aBpecjlYJtFnysVo18-6xCJaoulJOs8kVSLDHyH4H7vNo6SIWqV8LS9sST7DzA87JtUoOkmNZgXGLE-1wgM0kavpzmHxhHm5PdvfHBjtED57eTDoNZUdYUvPf08Xs760BYJypeX9X~hY8P8ks1nDa2HGVUHVNcBH5qlgneBR-qqsgTfiPHrLcHkvFBoR4bw3zYGFXmbXU7XOR95ofIxJdAWnLhkHUBXFK7KKN7IdJh5pShGV9mmky00Z5PZFv0y3~9PpM-ZoNwzY8E3cbxzmgH5YrkooRYw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=64) from our bioethics example) to some domain-specific use cases. Not only would this improve upon the technology deployed, but also our own understanding of what works best in certain situations, aided by the study of casuistry.
 
 As a resource, the ApplE ontology has various impacts in the technical and social space, and we hope it is utilized to the fullest.
+
+<a name="maintenance"></a>
+### 8. Resource Maintenance
+
+With regard to the maintenance of the ApplE ontology, this was a concern that was considered at the point of selecting the methodology. The SAMOD methodology is perfect for ontology developers who wish to build an ontology that is easy to maintain. From the insistence on clear naming, well-documented glossaries, and iterative, modular development, the methodology is a great way to ensure a sustainable development plan. With our customized version of SAMOD that includes the Spiral Development methodology as well, we also take into account newer developments in the field of applied ethics, the inclusion of which would result in yet another development cycle. 
+
+- Modular Ontology Design: The ApplE ontology is designed in a modular format to allow easy maintenance. One module may be updated without affecting the other.
+- Corrections and Updates: As more developments are made in this area, the ontology would be updated accordingly on this publicly available repository and on the [permanent locator](http://150.146.207.114/lode/extract?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkracr%2Fapplied-ethics-ontology%2Fmain%2FApplE%2520Ontology%2Fapple.owl&lang=en) as well. 
+- Adapting to new requirements: It is imperative to anticipate various domains where this resource may be applied, and ontologies may be created by the extension of ApplE. Our ontology is open to such extensions, and will be documented here and on all related sources.
+- Resource Distribution: We aim to increase the reach of this resource for various interdisciplinary research, and thus would suggest ApplE at the Linked Open Vocabulary (LOV) platform, and will also circulate the ontology resource to relevant mailing lists. 
+- Further Applications: Further applications for the ApplE ontology include extrapolation to domain-specific use cases, KG and dataset development, reusing entities from the ontology, neurosymbolic applications such as prediction and classification tasks in this area, case-based reasoning, question-answering systems, ethical dilemma resolution via recommender systems. As and when we build such applications or are made aware of other systems that are using the ApplE ontology as a resource, we will link them here on this permanent repository.
