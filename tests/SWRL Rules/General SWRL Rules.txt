@@ -1,0 +1,7 @@
+GENERAL SWRL RULES	
+
+Rule 1:	ActiveAgent(?ag), hasConsequence(?a, ?c), hasSeverityOfConsequence(?c, ?soc), hasUtilityOfConsequence(?c, ?uoc), hasDurationOfConsequence(?c, ?doc), hasMoralIntention(?ag, ?mi), violatesEthicalPrinciple(?a, ?vep), upholdsEthicalPrinciple(?a, ?uep), hasScore(?soc, ?socs), hasScore(?uoc, ?uocs), hasScore(?doc, ?docs), hasScore(?mi, ?mis), hasScore(?vep, ?veps), hasScore(?uep, ?ueps), multiply(?prod, ?socs, ?uocs, ?docs), add(?sum, ?prod, ?mis, ?veps, ?ueps), equal(?sum, 0) -> MorallyGreyAction(?a)
+
+Rule 2:	ActiveAgent(?ag), hasConsequence(?a, ?c), hasSeverityOfConsequence(?c, ?soc), hasUtilityOfConsequence(?c, ?uoc), hasDurationOfConsequence(?c, ?doc), hasMoralIntention(?ag, ?mi), violatesEthicalPrinciple(?a, ?vep), upholdsEthicalPrinciple(?a, ?uep), hasScore(?soc, ?socs), hasScore(?uoc, ?uocs), hasScore(?doc, ?docs), hasScore(?mi, ?mis), hasScore(?vep, ?veps), hasScore(?uep, ?ueps), multiply(?prod, ?socs, ?uocs, ?docs), add(?sum, ?prod, ?mis, ?veps, ?ueps), greaterThan(?sum, 0) -> MorallyRightAction(?a)
+
+Rule 3:	ActiveAgent(?ag), hasConsequence(?a, ?c), hasSeverityOfConsequence(?c, ?soc), hasUtilityOfConsequence(?c, ?uoc), hasDurationOfConsequence(?c, ?doc), hasMoralIntention(?ag, ?mi), violatesEthicalPrinciple(?a, ?vep), upholdsEthicalPrinciple(?a, ?uep), hasScore(?soc, ?socs), hasScore(?uoc, ?uocs), hasScore(?doc, ?docs), hasScore(?mi, ?mis), hasScore(?vep, ?veps), hasScore(?uep, ?ueps), multiply(?prod, ?socs, ?uocs, ?docs), add(?sum, ?prod, ?mis, ?veps, ?ueps), lessThan(?sum, 0) -> MorallyWrongAction(?a)
