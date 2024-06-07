@@ -1,0 +1,135 @@
+Identifier	CQ1
+Question	What are the main branches of Ethics and its subclasses?
+Formal Query	DL: Ethics
+Results:	"AppliedEthics
+		Bioethics
+		BusinessEthics
+		Consequentialism
+		Deontology
+		EnvironmentalEthics
+		EthicsOfCare
+		LegalEthics
+		MediaEthics
+		MetaEthics
+		NormativeEthics
+		PoliticalEthics
+		ProfessionalEthics
+		TechnologicalEthics
+		VirtueEthics"
+	
+Identifier	CQ2
+Question	What are the characteristics of a consequence of an Action?
+Formal Query	CharacteristicOfConsequence
+Results:	"DurationOfConsequence
+		SeverityOfConsequence
+		UtilityOfConsequence"
+	
+Identifier	CQ3
+Question 	Are there any common issues that exist in both Bioethics and BusinessEthics?
+Formal Query	BioethicsIssue and BusinessEthicalIssue
+Results:	Consent
+	
+Identifier	CQ4
+Question 	Which domain adheres to the applying Bioethics?
+Formal Query	Domain and adheresTo some Bioethics
+Results:	MedicalDomain
+	
+Identifier	CQ5
+Question 	Which kinds of applied ethics adhere to the professional domain?
+Formal Query	AppliedEthics and appliedTo some ProfessionalDomain
+Results:	"AcademicEthics
+		BusinessEthics"
+	
+Identifier	CQ6
+Question 	What are the different Philosophies applied to Environmental Ethics?
+Formal Query	EnvironmentalEthicsPhilosophy
+Results:	"Animism
+		Anthropocentrism
+		Bioregionalism
+		DeepEcology
+		Disenchantment
+		Feminism
+		SocialEcology"
+	
+Identifier	CQ7
+Question 	Which applied ethics apply the philosophy of Feminism?
+Formal Query	AppliedEthicsPhilosophy and {Feminism}
+Results:	Bioethics, EnvironmentalEthics
+	
+Identifier	CQ8
+Question 	Which Agent does an action?
+Formal Query	foaf:Agent and doesAction some Action
+Results:	ActiveAgent
+	
+Identifier	CQ9
+Question 	Which branch of Normative ethics is associated with Moral Intention?
+Formal Query	NormativeEthics and associatedWith some MoralIntention
+Results:	Virtue Ethics
+	
+Identifier	CQ10
+Question 	What kinds of issues are resolved by Bioethics Philosophies?
+Formal Query	resolvedBy some BioethicsPhilosophy
+Results:	"Abortion
+		ClinicalResearch
+		Consent
+		DoNotResuscitate
+		Euthanasia
+		Misdiagnosis
+		ResourceAllocation"
+	
+Identifier	CQ11
+Question 	Who is affected by an Action?
+Formal Query	inverse affects some Action
+Results:	PassiveAgent
+	
+Identifier	CQ12
+Question 	What kind of action may both uphold and violate some ethical principles?
+Formal Query	Action and (upholdsEthicalPrinciples some) and (violatesEthicalPrinciples some) 
+Results:	MorallyGreyAction
+	
+Identifier	CQ13
+Question 	Which Business Ethical Issues are resolved by the stakeholder balance philosophy?
+Formal Query	BusinessEthicalIssue and (resolvedBy some {StakeholderBalance})
+Results:	"Consent
+		DiscriminationInEmployment
+		FiringWithoutJustCause
+		PriceDiscrimination
+		ProductSafety
+		UnreasonableCompensation"
+	
+Identifier	CQ14
+Question 	Which Applied ethics philosophy may help to resolve the issue of Deforestation?
+Formal Query	AppliedEthicsPhilosophy and (resolves some {Deforestation})
+Results:	DeepEcology
+	
+Identifier	CQ15
+Question 	Who are the participants in the event of prescribing an addictive drug?
+Formal Query	isParticipantIn some {PrescriptionOfAddictiveDrug}
+Results:	Doctor, Patient
+	
+Identifier	CQ16
+Question 	Which active agent prescribes the opioid painkiller?
+Formal Query	ActiveAgent and doesAction some {PrescribeOpioidPainkiller
+Results:	Doctor
+	
+Identifier	CQ17
+Question 	What is the consequence of the action done by the Doctor?
+Formal Query	Consequence and inverse hasConsequence some (Action and inverse doesAction some {Doctor})
+Results:	OpioidUseDisorder, PainRelief
+	
+Identifier	CQ18
+Question 	What are the characteristics of the consequence: Opioid use disorder?
+Formal Query	CharacteristicOfConsequence and inverse hasCharacteristicOfConsequence some {OpioidUseDisorder}
+Results:	"BadConsequence
+		LongTermConsequence
+		SignificantConsequence"
+	
+Identifier	CQ19
+Question 	What ethical principles are violated by the action of the doctor?
+Formal Query	inverse violatesEthicalPrinciple some (Action and inverse doesAction some {Doctor})
+Results:	Nonmaleficence, Responsibility
+	
+Identifier	CQ20
+Question 	What is the severity of the consequence pain relief?
+Formal Query	SeverityOfConsequence and inverse hasSeverityOfConsequence some {PainRelief}
+Results:	ModerateConsequence
