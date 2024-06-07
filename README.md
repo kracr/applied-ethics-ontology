@@ -34,7 +34,7 @@ Table of Contents:
 
    6.3. [How to - Dataset Development](#c)
 
-   6.3. [How to - Metaethics Research](#d)
+7. [Metaethics Research (for philosophy nerds)](#meta)
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -67,7 +67,7 @@ During the initial phase, informal competency questions were created to gauge th
 - Applied Ethics Module
    - Ethics: A discipline concerned with studying what is morally right, wrong, good, or bad.
 
-   - Applied Ethics: A discipline concerned with the application of ethics in realworld events.
+   - Applied Ethics: A discipline concerned with the application of ethics in real-world events.
 
    - Applied Ethics Philosophy: A theory or ideology that stems from normative ethics and is applied to real-world events.
 
@@ -114,7 +114,7 @@ The ApplE ontology consists of two modules which each categorize the various fac
 <a name="repo"></a>
 ## 5. Repository Details
 
-This repository consists of the ApplE ontology and related artefacts.
+This repository consists of the ApplE ontology and related artifacts.
 
 <a name="5onto"></a>
 ### 5.1. ApplE Ontology
@@ -155,7 +155,7 @@ Reusing entities from established ontologies is considered a good practice in th
 <a name="b"></a>
 ###  6.2. How to - Domain-Specific Use Case
 
-One may apply the ontology to a specific use case, and use the given entities and properties to infer semantically appropriate information from the scenario. A user may plug in the user-required values in the form of instances for as many classes as they can (provided that the information regarding the scenario is known to them), and let the ontology do the rest.
+One may apply the ontology to a specific use case and use the given entities and properties to infer semantically appropriate information from the scenario. A user may plug in the user-required values in the form of instances for as many classes as they can (provided that the information regarding the scenario is known to them) and let the ontology do the rest.
 
 The instances will then add to a knowledge graph that would represent the domain-specific use case via the ApplE ontology.
 
@@ -195,5 +195,17 @@ A screengrab from the ontology-aided ApplE dataset is shown below:
 
 ![alt text](https://github.com/kracr/applied-ethics-ontology/blob/main/images/split.png?raw=true)
 
-<a name="d"></a>
-###  6.4. How to - Metaethics Research
+<a name="meta"></a>
+## 7. Metaethics Research (for philosophy nerds)
+
+This resource is an ontology type in the semantic web technologies context, but is also an ontology in a [philosophical sense](https://plato.stanford.edu/entries/logic-ontology/). An ontology is a study of what there is, regarding the existence of a concept; there exists, for some, or at least one. Such a philosophical concept is associated with many philosophical questions, such as Hume's is-ought problem and the question of God's existence. 
+
+An ontology describes what there is and the characteristics of what there is, which is easy enough to do when considering simple objects or beings that are more apparent in the real world, such as household items, musical bands, political figures and [pizza](https://protege.stanford.edu/ontologies/pizza/pizza.owl). However, this philosophical discipline is more complex when applied to abstract concepts and begins with meta-questions such as 'does ethical AI exist?', 'can ethical AI exist?' 'can ethics be adequately captured by an AI system?', and 'what does it even mean to be adequately ethical?', amongst many other questions that are raised in the ontological study of developing an applied ethics taxonomy catered towards making inherently ethical AI systems.
+
+The ApplE ontology is a resource contribution that is rooted in this philosophy, and builds on these questions lying at the intersection of ethics and technology. Various authors such as [Savulescu and Malsen](https://link.springer.com/chapter/10.1007/978-3-319-09668-1_6), [Brozek and Janik](https://d1wqtxts1xzle7.cloudfront.net/108112753/j.newideapsych.2018.12.00220231130-1-hrrtor-libre.pdf?1701376857=&response-content-disposition=inline%3B+filename%3DCan_artificial_intelligences_be_moral_ag.pdf&Expires=1717746862&Signature=gOBv03MsL4NzQjjppODQEnWY5fMr8XNL-xULlukfmFhUqhRXhnpn-R1oVkAt5eHyI0y3FRVVycaipqOzV0rUoWC2SDvB4faSvcwjNLaXfzuNNDiID14OYMIzIPE2dmRaEhQrdq1MavYwRMCEYudsSahlpufboAwHGcX8FixxE9V5aNDkk4Pfyp8lRBAAnm713lyhuJ2r4csB~4TFoJ6amejomGu5uz1zmoW4viFqsqwmmBZ1bKP9k5AuDnujCGm-ui0AnFueRnMn7UJRlUyQjfu4ymTvzSIAoA36ICgA9Tfxg95peFZIpgIADbes3W36JmpjLTlQIBbgs~t~hjF-ZA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA), [Pana](https://triple-c.at/index.php/tripleC/article/view/43/42), and [Liao](https://www.google.co.in/books/edition/Ethics_of_Artificial_Intelligence/2ST3DwAAQBAJ?hl=en&gbpv=1&dq=artificial+moral+intelligence&pg=PA480&printsec=frontcover) have penned their thoughts on artificial morality and the capacity for ethical decision-making in AI systems. With reference to these and more, we have formulated an Applied Ethics taxonomy that is built on the way human beings make decisions that may have associated ethical dilemmas. However, as humans are predisposed to their background and upbringing which, for the most part, dictates how they make their decisions, AI systems do not have to carry those biases and preconditioning to make decisions.
+
+Initially, we began this research project with the intention to discretize ethical concepts, solely. However, due to this finding regarding ethical decision-making being heavily influenced by background factors (apart from contextual factors), we realized that simply working with ethical concepts would be a challenge: which school of thought should the AI system pick? To resolve this concern, we switched to the representation of Applied Ethics, where, after decades of discourse, there is some understanding and consensus about the ethical theories that are usually applied in specific domains. 
+
+This is why the ApplE Ontology may fuel not only technological research but also metaethics research, as we can run and test neurosymbolic models built upon this resource to truly gauge (in real-time) the applicability of specific theories (for example, [principlism](https://d1wqtxts1xzle7.cloudfront.net/73154189/Physicians_and_Patients_in_Relation_Clin20211019-24187-z1m6s4-libre.pdf?1634653881=&response-content-disposition=inline%3B+filename%3DPhysicians_and_Patients_in_Relation_Clin.pdf&Expires=1717747572&Signature=TOASBoxVguD82Ls0IN7Pk709mjZ6REr03xu-v1UJCYrgYlSkZo9lwo6aBpecjlYJtFnysVo18-6xCJaoulJOs8kVSLDHyH4H7vNo6SIWqV8LS9sST7DzA87JtUoOkmNZgXGLE-1wgM0kavpzmHxhHm5PdvfHBjtED57eTDoNZUdYUvPf08Xs760BYJypeX9X~hY8P8ks1nDa2HGVUHVNcBH5qlgneBR-qqsgTfiPHrLcHkvFBoR4bw3zYGFXmbXU7XOR95ofIxJdAWnLhkHUBXFK7KKN7IdJh5pShGV9mmky00Z5PZFv0y3~9PpM-ZoNwzY8E3cbxzmgH5YrkooRYw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=64) from our bioethics example) to some domain-specific use cases. Not only would this improve upon the technology deployed, but also our own understanding of what works best in certain situations, aided by the study of casuistry.
+
+As a resource, the ApplE ontology has various impacts in the technical and social space, and we hope it is utilized to the fullest.
