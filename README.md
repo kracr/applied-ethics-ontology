@@ -145,13 +145,11 @@ This tutorial describes methods of application where the ApplE ontology may be u
 <a name="a"></a>
 ###  6.1. How to - Reuse Desirable Entities
 
-The ontology is available for anyone to access via this repository and the PURL locator. We have suggested the ApplE ontology to the [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/) as a resource since the platform does not contain any ontology or ODP that is dedicated to Applied Ethics, Ethics, or Ethics Theory. 
+The ontology is available for anyone to access via this repository and the PURL locator. We will suggest the ApplE ontology to the [Linked Open Vocabulary](https://lov.linkeddata.es/dataset/lov/) as a resource since the platform does not contain any ontology or ODP that is dedicated to Applied Ethics, Ethics, or Ethics Theory. 
 
-Once accessed/downloaded, a user may import the ontology to their own and use the entities (classes, data properties, instances, etc.) they would like for their own ontology. This is usually recommended when a user may like to expand on our ontology for a specific use case, or use many entities.
+A user may import the ApplE ontology into their own and reuse the entities they would like. This is usually recommended when a user may like to expand on our ontology for a specific use case, or use many entities.
 
-Alternatively, a use may use the IRI of the entity they choose and directly import it via that identifier. This is recommended when the number of desired entities from the ApplE ontology are few.
-
-Reusing entities from established ontologies is considered a good practice in the ontology development and modeling community as it aids the interconnectedness of information.
+Alternatively, a user may use the IRI of the entity they choose and directly import it via that identifier. This is recommended when the number of desired entities from the ApplE ontology are few.
 
 <a name="b"></a>
 ###  6.2. How to - Domain-Specific Use Case
@@ -199,7 +197,7 @@ A screengrab from the ontology-aided ApplE dataset is shown below:
 <a name="meta"></a>
 ## 7. Metaethics Research (for philosophy nerds)
 
-This resource is an ontology type in the semantic web technologies context, but is also an ontology in a [philosophical sense](https://plato.stanford.edu/entries/logic-ontology/). An ontology is a study of what there is, regarding the existence of a concept; there exists, for some, or at least one. Such a philosophical concept is associated with many philosophical questions, such as Hume's is-ought problem and the question of God's existence. 
+This resource is an ontology type in the Semantic Web technologies context, but is also an ontology in a [philosophical sense](https://plato.stanford.edu/entries/logic-ontology/). An ontology is a study of what there is, regarding the existence of a concept; there exists, for some, or at least one. Such a philosophical concept is associated with many philosophical questions, such as Hume's is-ought problem and the question of God's existence. 
 
 An ontology describes what there is and the characteristics of what there is, which is easy enough to do when considering simple objects or beings that are more apparent in the real world, such as household items, musical bands, political figures and [pizza](https://protege.stanford.edu/ontologies/pizza/pizza.owl). However, this philosophical discipline is more complex when applied to abstract concepts and begins with meta-questions such as 'does ethical AI exist?', 'can ethical AI exist?' 'can ethics be adequately captured by an AI system?', and 'what does it even mean to be adequately ethical?', amongst many other questions that are raised in the ontological study of developing an applied ethics taxonomy catered towards making inherently ethical AI systems.
 
