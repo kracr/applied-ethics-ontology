@@ -583,6 +583,7 @@ This property describes the relationship between an active agent and the action 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An event happening at a certain time and location,&gt; property. Repeated events may be structured as separate Event objects. (From schema: https://lov.linkeddata.es/dataset/lov/vocabs/schema)</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -600,6 +601,7 @@ This property describes the relationship between an active agent and the action 
 
     <owl:Class rdf:about="http://w3id.org/daselab/onto/trajectory#TimeEntity">
         <rdfs:comment>The hook to class/pattern/ontology that models time, this class provides the temporal extent of the trajectory. One example of time model is the W3C Time Ontology.</rdfs:comment>
+        <rdfs:label>Time</rdfs:label>
         <rdfs:seeAlso>http://www.w3.org/2006/time</rdfs:seeAlso>
     </owl:Class>
     
@@ -607,7 +609,11 @@ This property describes the relationship between an active agent and the action 
 
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL -->
 
-    <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The elements used to apply SWRL Rules to the ApplE ontology. This class has been included to resolve important pitfalls.</rdfs:comment>
+        <rdfs:label>fromW3SWRL</rdfs:label>
+    </owl:Class>
     
 
 
@@ -672,6 +678,7 @@ This property describes the relationship between an active agent and the action 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An active agent is an agent that does the action in an event.</rdfs:comment>
+        <rdfs:label>ActiveAgent</rdfs:label>
     </owl:Class>
     
 
@@ -944,6 +951,7 @@ For example, autonomy is an ethical principle which must be upheld so as to not 
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple/Ethics -->
 
     <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Ethics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Ethics is a field of study in philosophy that describes the morality of an action in terms of its rightness, wrongness, goodness, and badness.</rdfs:comment>
     </owl:Class>
     
@@ -1009,6 +1017,7 @@ For example, autonomy is an ethical principle which must be upheld so as to not 
 Moral intent is the desire to act ethically when facing a decision and overcome the rationalization to not be ethical “this time.” Even if a person sees the ethical aspects of a decision and has the philosophical tools to make the right choice, he or she still needs to want to do the right thing. If a person has no moral intent, then moral awareness and moral decision making are useless.
 
 (From BEING YOUR BEST SELF, PART 3: MORAL INTENT, Ethics Unwrapped.)</rdfs:comment>
+        <rdfs:label>MoralIntention</rdfs:label>
     </owl:Class>
     
 
@@ -1078,6 +1087,7 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
     <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/PassiveAgent">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>A Passive agent is an agent that may be involved in an event and is directly affected by the action of the active agent.</rdfs:comment>
+        <rdfs:label>PassiveAgent</rdfs:label>
     </owl:Class>
     
 
@@ -1186,6 +1196,7 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role">
         <rdfs:comment>A Concept that classifies an Object (in the case of the ApplE ontology, the role of an Agent).</rdfs:comment>
+        <rdfs:label>Role</rdfs:label>
     </owl:Class>
     
 
@@ -1256,6 +1267,7 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An agent (eg. person, group, software or physical artifact). (From foaf: https://lov.linkeddata.es/dataset/lov/vocabs/foaf)</rdfs:comment>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
