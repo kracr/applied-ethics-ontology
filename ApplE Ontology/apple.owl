@@ -92,6 +92,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
     <!-- http://w3id.org/daselab/onto/event#subEventOf -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/daselab/onto/event#subEventOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Event"/>
         <rdfs:range rdf:resource="http://schema.org/Event"/>
         <rdfs:comment>Property expressing partonomic relation between two events. Domain and range are always Event.</rdfs:comment>
@@ -106,6 +108,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Event"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/trajectory#Place"/>
+        <rdfs:comment>A property that describes where an action occurred.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -117,6 +120,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Event"/>
         <rdfs:range rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
+        <rdfs:comment>A property that describes when an action occurred.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -125,6 +129,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#hasDurationOfConsequence">
         <rdfs:subPropertyOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/hasCharacteristicOfConsequence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/AIRO#Consequence"/>
+        <rdfs:range rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/DurationOfConsequence"/>
     </owl:ObjectProperty>
     
 
@@ -133,6 +139,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#hasSeverityOfConsequence">
         <rdfs:subPropertyOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/hasCharacteristicOfConsequence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/AIRO#Consequence"/>
+        <rdfs:range rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SeverityOfConsequence"/>
     </owl:ObjectProperty>
     
 
@@ -141,6 +149,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#hasUtilityOfConsequence">
         <rdfs:subPropertyOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/hasCharacteristicOfConsequence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/AIRO#Consequence"/>
+        <rdfs:range rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/UtilityOfConsequence"/>
     </owl:ObjectProperty>
     
 
@@ -149,6 +159,9 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#violatedByAction">
         <owl:inverseOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/violatesEthicalPrinciple"/>
+        <rdfs:domain rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
+        <rdfs:range rdf:resource="http://schema.mobivoc.org/Action"/>
+        <rdfs:comment>This property describes the ethical principle that was violated by the occurrence of an action.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -194,6 +207,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple/appliesTo -->
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/appliesTo">
+        <rdfs:domain rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/AppliedEthics"/>
+        <rdfs:range rdf:resource="https://w3id.org/AIRO#Domain"/>
         <rdfs:comment>Inverse of the adheresTo object property. This property implies that a type of applied ethics applies to a certain domain.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -205,6 +220,7 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/NormativeEthics"/>
+        <rdfs:range rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <rdfs:comment>Types of normative ethics may be associated with certain ethical concepts.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -300,6 +316,8 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple/resolves -->
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/resolves">
+        <rdfs:domain rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/AppliedEthicsPhilosophy"/>
+        <rdfs:range rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalIssue"/>
         <rdfs:comment>Inverse of the resolvedBy property. An applied ethics philosophy resolves an applied ethics issue. Although the term is assertive (resolves), the property demostrates that a certain property may be used to resolve an ethical issue.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -431,8 +449,11 @@ This property describes the relationship between an active agent and the action 
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple/hasScore -->
 
     <owl:DatatypeProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/hasScore">
+        <rdfs:domain rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/CharacteristicOfConsequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
         <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+        <rdfs:comment>Provides a descriptive value to the important factors we have considered that help to make a decision regarding the morality of an action.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -442,6 +463,7 @@ This property describes the relationship between an active agent and the action 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>A data property reused from the time ODP and describes when an event begins to occur.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -451,6 +473,7 @@ This property describes the relationship between an active agent and the action 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
         <rdfs:domain rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment>A data property reused from the time ODP and describes when an event ends.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -510,6 +533,7 @@ This property describes the relationship between an active agent and the action 
     <!-- http://schema.org/Event -->
 
     <owl:Class rdf:about="http://schema.org/Event">
+        <owl:equivalentClass rdf:resource="https://w3id.org/AIRO#Consequence"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/daselab/onto/trajectory#atPlace"/>
@@ -988,7 +1012,7 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
                 <owl:someValuesFrom rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>An action that has some benefits and losses to the extent that it is indiscernible as to which is the better course of action is considered a morally grey action.</rdfs:comment>
+        <rdfs:comment>An action that has some benefits and losses to the extent that it is indiscernible as to which is the better course of action is considered a morally grey action. It has equally good and bad moral value in terms of consequence, principle, and intention.</rdfs:comment>
     </owl:Class>
     
 
@@ -1236,8 +1260,10 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple#Bioethics -->
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#Bioethics">
+        <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Ethics"/>
         <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Bioethics"/>
         <apple:appliesPhilosophy rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Principlism"/>
+        <rdfs:comment>The study of ethical, social, and legal issues that arise in biomedicine and biomedical research</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1247,6 +1273,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#BioethicsEventContext">
         <rdf:type rdf:resource="http://contextus.net/ontology/ontomedia/core/expression#Context"/>
         <apple:describesEvent rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#PrescriptionOfAddictiveDrug"/>
+        <rdfs:comment>The context in which an event occurs in the medical domain.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1255,6 +1282,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#Clinic">
         <rdf:type rdf:resource="http://w3id.org/daselab/onto/trajectory#Place"/>
+        <rdfs:comment>A space where outpatients recieve treatment or are referred to hospitals.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1323,6 +1351,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
         <apple:violatesEthicalPrinciple rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Responsibility"/>
         <AIRO:hasConsequence rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#OpioidUseDisorder"/>
         <AIRO:hasConsequence rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#PainRelief"/>
+        <rdfs:comment>The action by the doctor to prescribe an opioid painkiller.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1346,6 +1375,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#1996">
         <rdf:type rdf:resource="http://w3id.org/daselab/onto/trajectory#TimeEntity"/>
         <time:hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T13:20:00Z</time:hasBeginning>
+        <rdfs:comment>The year 1996.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1354,6 +1384,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Abortion">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsIssue"/>
+        <rdfs:comment>Abortion is the process of deliberately ending a pregnancy.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1362,6 +1393,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Animism">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
+        <rdfs:comment>The attribution of a living soul to plants, inanimate objects, and natural phenomena.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1370,6 +1402,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Anthropocentrism">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
+        <rdfs:comment>The ethical belief that humans alone possess intrinsic value.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1379,6 +1412,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Autonomy">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>In Kantian moral philosophy, the capacity of an agent to act in accordance with objective morality rather than under the influence of desires.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1388,6 +1422,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/BadConsequence">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/UtilityOfConsequence"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</apple:hasScore>
+        <rdfs:comment>A consequence that has a negative moral value in accordance with its utility, principle, and moral intention.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1397,6 +1432,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/BadMoralIntention">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/MoralIntention"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-2</apple:hasScore>
+        <rdfs:comment>A premeditated intention to cause harm or loss to another agent.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1406,6 +1442,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Beneficence">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>An act done with a strong connotation of doing good to others including moral obligation.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1414,6 +1451,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Bioregionalism">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
+        <rdfs:comment>Bioregionalism is a philosophy that suggests that political, cultural, and economic systems are more sustainable and just if they are organized around naturally defined areas called bioregions, similar to ecoregions.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1422,6 +1460,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Casuistry">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsPhilosophy"/>
+        <rdfs:comment>Casuistry is to do with discerning the ethics of an action based on several previous actions.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1430,6 +1469,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/ClimateChange">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>Climate change refers to long-term shifts in temperatures and weather patterns. (via UN)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1438,6 +1478,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/ClinicalResearch">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsIssue"/>
+        <rdfs:comment>The comprehensive study of the safety and effectiveness of the most promising advances in patient care.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1446,6 +1487,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/CommonMorality">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsPhilosophy"/>
+        <rdfs:comment>A moral system that everyone uses implicitly when making decisions and judgments.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1455,6 +1497,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Compassion">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>Sympathetic pity and concern for the sufferings or misfortunes of others.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1465,6 +1508,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsIssue"/>
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/ConsumerCentricBusinessEthicalIssue"/>
         <apple:resolvedBy rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/StakeholderBalance"/>
+        <rdfs:comment>Permission for something to happen or agreement to do something.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1481,6 +1525,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/CorporatePoliticalActivity">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SocietyCentricBusinessEthicalIssue"/>
+        <rdfs:comment>Corporate attempts to shape public policy</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1489,6 +1534,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/CorporateSocialResponsibility">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SocietyCentricBusinessEthicalIssue"/>
+        <rdfs:comment>A theory that asserts that businesses should act in a manner that benefits the well-being of society and the environment.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1497,6 +1543,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/CullingFeralAnimals">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>The act of killing eliminated animals due to their feral nature and potential harm to their immediate ecosystem.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1505,6 +1552,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/CurbingOverpopulation">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>The steps that may be taken on a large scale to prevent a population explosion in highly populated regions.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1515,6 +1563,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
         <apple:resolves rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/CullingFeralAnimals"/>
         <apple:resolves rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Deforestation"/>
+        <rdfs:comment>The belief that nature has an inherent value.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1523,6 +1572,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Deforestation">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>The purposeful clearing of forested land.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1531,6 +1581,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/DeontologyForBusiness">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicsPhilosophy"/>
+        <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Ethics"/>
     </owl:NamedIndividual>
     
 
@@ -1720,6 +1771,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/MildConsequence">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SeverityOfConsequence"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>A consequence that has a mild impact. The term &apos;mild&apos; may be subjective and comparative to other consequences. The choice of describing the severity of the consequence is upto the user.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1737,6 +1789,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/ModerateConsequence">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SeverityOfConsequence"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</apple:hasScore>
+        <rdfs:comment>A consequence that has a moderate impact. The term &apos;moderate&apos; may be subjective and comparative to other consequences. The choice of describing the severity of the consequence is upto the user.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1745,6 +1798,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/NarrativeEthics">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BioethicsPhilosophy"/>
+        <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/Ethics"/>
     </owl:NamedIndividual>
     
 
@@ -1916,6 +1970,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/SignificantConsequence">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/SeverityOfConsequence"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</apple:hasScore>
+        <rdfs:comment>A consequence that has a severe impact. The term &apos;severe&apos; may be subjective and comparative to other consequences. The choice of describing the severity of the consequence is upto the user.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1924,6 +1979,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/SocialEcology">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicsPhilosophy"/>
+        <rdfs:comment>Social ecology studies relationships between people and their environment, often the interdependence of people, collectives and institutions.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1933,6 +1989,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Solidarity">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>Unity or agreement of feeling or action.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1941,6 +1998,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/StakeholderBalance">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicsPhilosophy"/>
+        <rdfs:comment>Stakeholder balance ensures that all individuals or groups with a vested interest in the company or the project have aligned interests and are compensated fairly without significant compromise from one party over another.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1949,6 +2007,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Sustainability">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EnvironmentalEthicalIssue"/>
+        <rdfs:comment>Sustainability is an environmental issue that has to do with reusing resources for energy generation and regular consumption in order to utilize them for longer.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1957,6 +2016,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/ToxicWorkEnvironment">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>A toxic work environment is one where negative, antagonistic, or bullying behavior is highly prominent at the workplace.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1966,6 +2026,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Transparency">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/EthicalPrinciple"/>
         <apple:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</apple:hasScore>
+        <rdfs:comment>Transparency is a principle that has to do with a clarity of motives and procedure regarding a certain action.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1974,6 +2035,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/UnethicalAdvertising">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/ConsumerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>Unethical advertising practices advertise a product or product feature in a controversial way to persuade a customer to buy it. (via IGI Global)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1983,6 +2045,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/UnreasonableCompensation">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
         <apple:resolvedBy rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/StakeholderBalance"/>
+        <rdfs:comment>Unreasonable compensation is a level of compensation for owner-managers that does not meet the requirements for reasonable compensation. This may be either too low a compensation level or too high, depending upon the form of incorporation. (via Economic Research Institute)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1991,6 +2054,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/VirtueEthicsForBusiness">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicsPhilosophy"/>
+        <rdfs:comment>Virtue ethics in business favors the demonstration of virtues such as honesty, diligence, responsibility, and compassion at the workplace.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1999,6 +2063,7 @@ Here, we use domain in a more general sense for our purposes.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/Whistleblowing">
         <rdf:type rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue"/>
+        <rdfs:comment>Whistleblowing is the lawful disclosure of information a discloser reasonably believes evidences wrongdoing to an authorized recipient. (via DNI.gov)</rdfs:comment>
     </owl:NamedIndividual>
     
 
