@@ -605,6 +605,12 @@ This property describes the relationship between an active agent and the action 
     
 
 
+    <!-- http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL -->
+
+    <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL"/>
+    
+
+
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple/AcademicDomain -->
 
     <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/AcademicDomain">
@@ -1180,6 +1186,14 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role">
         <rdfs:comment>A Concept that classifies an Object (in the case of the ApplE ontology, the role of an Agent).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#AtomList -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#AtomList">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL"/>
     </owl:Class>
     
 
