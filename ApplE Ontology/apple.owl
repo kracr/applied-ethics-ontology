@@ -605,9 +605,9 @@ This property describes the relationship between an active agent and the action 
     
 
 
-    <!-- http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL -->
+    <!-- http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL -->
 
-    <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL"/>
+    <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
     
 
 
@@ -1193,7 +1193,55 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
     <!-- http://www.w3.org/2003/11/swrl#AtomList -->
 
     <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#AtomList">
-        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromSWRL"/>
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#BuiltinAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#BuiltinAtom">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#ClassAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#ClassAtom">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#Imp -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#Imp">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#IndividualPropertyAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#Variable -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple#fromW3SWRL"/>
     </owl:Class>
     
 
