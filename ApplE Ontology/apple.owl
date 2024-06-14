@@ -125,6 +125,17 @@ However, when reusing this concept from the EventCore ODP for the ApplE ontology
     
 
 
+    <!-- http://www.kracr.iiitd.edu.in/ontology/apple#describedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#describedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/describesEvent"/>
+        <rdfs:domain rdf:resource="http://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://contextus.net/ontology/ontomedia/core/expression#Context"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.kracr.iiitd.edu.in/ontology/apple#hasDurationOfConsequence -->
 
     <owl:ObjectProperty rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple#hasDurationOfConsequence">
@@ -1160,6 +1171,7 @@ Moral intent is the desire to act ethically when facing a decision and overcome 
     <owl:Class rdf:about="http://www.kracr.iiitd.edu.in/ontology/apple/WorkerCentricBusinessEthicalIssue">
         <rdfs:subClassOf rdf:resource="http://www.kracr.iiitd.edu.in/ontology/apple/BusinessEthicalIssue"/>
         <rdfs:comment>A worker-centric ethical issue is a business ethical issue that discusses the consequences of an action on one or more worker.</rdfs:comment>
+        <rdfs:label>WorkerCentricBusinessEthicalIssue</rdfs:label>
     </owl:Class>
     
 
