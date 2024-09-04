@@ -1,11 +1,11 @@
 # applied-ethics-ontology
 ## Overview
 
-This repository holds the [Applied Ethics (ApplE)](https://purl.org/appliedethicsontology/documentation) ontology, which captures ethical information using two modules: an [applied ethics module](#appliedethics) and an [event context module](#eventcontext). To enhance the reusability of this resource, this README file contains information about the [methodology](#method) used to develop the ontology, along with a [tutorial](#tut) to demonstrate its various applications. The associated [queries](https://github.com/kracr/applied-ethics-ontology/blob/main/tests/CQs%20and%20Queries.xlsx), [SWRL rules](https://github.com/kracr/applied-ethics-ontology/blob/main/tests/SWRL%20rules%20sheet.xlsx), [visual representations](https://github.com/kracr/applied-ethics-ontology/tree/main/images), and [documentation](https://github.com/kracr/applied-ethics-ontology/blob/main/Paper%20Submission.pdf) are also enclosed within this repository.  
+This repository holds the [Applied Ethics (ApplE)](https://aishaaijazahmad.github.io/ApplEDoc/) ontology, which captures ethical information using two modules: an [applied ethics module](#appliedethics) and an [event context module](#eventcontext). To enhance the reusability of this resource, this README file contains information about the [methodology](#method) used to develop the ontology, along with a [tutorial](#tut) to demonstrate its various applications. The associated [queries](https://github.com/kracr/applied-ethics-ontology/blob/main/tests/CQs%20and%20Queries.xlsx), [SWRL rules](https://github.com/kracr/applied-ethics-ontology/blob/main/tests/SWRL%20rules%20sheet.xlsx), [visual representations](https://github.com/kracr/applied-ethics-ontology/tree/main/images), and [documentation](https://github.com/kracr/applied-ethics-ontology/blob/main/Paper%20Submission.pdf) are also enclosed within this repository.  
 
 Further information regarding the ApplE ontology may be accessed at the following:
 - [ApplE Ontology](https://purl.org/appliedethicsontology)
-- [Documentation](https://purl.org/appliedethicsontology/documentation)
+- [Documentation](https://aishaaijazahmad.github.io/ApplEDoc/)
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Table of Contents:
@@ -42,7 +42,7 @@ Further information regarding the ApplE ontology may be accessed at the followin
 
 Applied ethics is ubiquitous in most domains and requires much deliberation due to its philosophical nature. This leads to conflicting courses of action where ethical dilemmas become challenging to resolve. The major driving forces in such a decision can be discretized and simplified to provide an indicative answer regarding the morality of an action. 
 
-Knowledge representation and reasoning (KRR) offer an efficient way to explicitly translate abstract ethical concepts into applicable principles within the context of an event. To achieve this, we propose [ApplE](http://150.146.207.114/lode/extract?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkracr%2Fapplied-ethics-ontology%2Fmain%2FApplE%2520Ontology%2Fapple.owl&lang=en), an Applied Ethics ontology that captures applied ethics theory and event context to holistically describe the morality of an action. The development process adheres to a modified version of the [Simplified Agile Methodology for Ontology Development (SAMOD)](https://essepuntato.it/samod/) and utilizes standard design and publication practices. 
+Knowledge representation and reasoning (KRR) offer an efficient way to explicitly translate abstract ethical concepts into applicable principles within the context of an event. To achieve this, we propose [ApplE](https://aishaaijazahmad.github.io/ApplEDoc/), an Applied Ethics ontology that captures applied ethics theory and event context to holistically describe the morality of an action. The development process adheres to a modified version of the [Simplified Agile Methodology for Ontology Development (SAMOD)](https://essepuntato.it/samod/) and utilizes standard design and publication practices. 
 
 Using ApplE, we model a use case from the [bioethics](https://plato.stanford.edu/entries/theory-bioethics/) domain that demonstrates our ontology’s social and scientific value. Apart from the ontological reasoning and quality checks, ApplE is also evaluated using the three-fold testing process of SAMOD. ApplE follows [FAIR principles](https://www.nature.com/articles/sdata201618) and aims to be a viable resource for applied ethicists and ontology engineers.
 
