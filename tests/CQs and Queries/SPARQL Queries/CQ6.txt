@@ -1,0 +1,23 @@
+#List the ethical principles upheld by agents who have performed actions in at least one event, and count how many events they participated in.
+
+PREFIX apple: <http://www.kracr.iiitd.edu.in/ontology/apple/>
+PREFIX applehash: <http://www.kracr.iiitd.edu.in/ontology/apple#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.mobivoc.org/>
+PREFIX traffic: <http://www.sensormeasurement.appspot.com/ont/transport/traffic#>
+PREFIX trajectory: <http://w3id.org/daselab/onto/trajectory#>
+PREFIX AIRO: <https://w3id.org/AIRO#>
+PREFIX ODP: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#>
+PREFIX coparticipation: <http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl#>
+
+SELECT ?agent ?upheldPrinciple (COUNT(DISTINCT ?event) AS ?eventCount)
+WHERE {
+  ?action :doneBy ?agent .
+  ?action apple:occursInEvent ?event .
+  ?action apple:upholdsEthicalPrinciple ?upheldPrinciple .
+}
+GROUP BY ?agent ?upheldPrinciple
+HAVING (COUNT(DISTINCT ?event) > 1)
+ORDER BY DESC(?eventCount)

@@ -1,0 +1,20 @@
+# Which actions were done by a Doctor and do not violate any ethical principles?
+
+PREFIX apple: <http://www.kracr.iiitd.edu.in/ontology/apple/>
+PREFIX applehash: <http://www.kracr.iiitd.edu.in/ontology/apple#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.mobivoc.org/>
+PREFIX traffic: <http://www.sensormeasurement.appspot.com/ont/transport/traffic#>
+PREFIX trajectory: <http://w3id.org/daselab/onto/trajectory#>
+PREFIX AIRO: <https://w3id.org/AIRO#>
+PREFIX ODP: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#>
+PREFIX coparticipation: <http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl#>
+
+SELECT ?action ?principle
+WHERE {
+  	?action a schema:Action .
+  	?action applehash:doneBy applehash:Doctor .  
+  	FILTER NOT EXISTS { ?action apple:violatesEthicalPrinciple ?principle .}
+}

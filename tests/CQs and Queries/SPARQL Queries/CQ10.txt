@@ -1,0 +1,27 @@
+# For each ethical principle, how many distinct actions uphold it, and how many violate it?
+
+PREFIX apple: <http://www.kracr.iiitd.edu.in/ontology/apple/>
+PREFIX applehash: <http://www.kracr.iiitd.edu.in/ontology/apple#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.mobivoc.org/>
+PREFIX traffic: <http://www.sensormeasurement.appspot.com/ont/transport/traffic#>
+PREFIX trajectory: <http://w3id.org/daselab/onto/trajectory#>
+PREFIX AIRO: <https://w3id.org/AIRO#>
+PREFIX ODP: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#>
+PREFIX coparticipation: <http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl#>
+
+SELECT ?principle 
+       (IF(COUNT(DISTINCT ?upholdingAction) < 1, "None", GROUP_CONCAT(DISTINCT ?upholdingAction; separator=", ")) AS ?upholdingActions) 
+       (IF(COUNT(DISTINCT ?violatingAction) < 1, "None", GROUP_CONCAT(DISTINCT ?violatingAction; separator=", ")) AS ?violatingActions)
+WHERE {
+  {
+    ?upholdingAction apple:upholdsEthicalPrinciple ?principle .
+  }
+  UNION
+  {
+    ?violatingAction apple:violatesEthicalPrinciple ?principle .
+  }
+}
+GROUP BY ?principle
